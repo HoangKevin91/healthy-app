@@ -4,7 +4,16 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      textShadow: {
+        'default': '0px 0px 6px #FC7400'
+      },
+      backgroundImage: {
+        'foodMenu-pattern': "url('./assets/gradientBg.png')",
+      }
+    },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-textshadow')
+  ],
 }

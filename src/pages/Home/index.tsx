@@ -1,17 +1,23 @@
 import React from "react"
+import ListCategory from "../../components/ListCategory";
 
-import leftImage from '../../assets/d01.jpg';
+import LeftContent from "./LeftContent";
 
 export default function Home () {
+    const listCategory = [
+        {
+            title: "Food"
+        }
+    ]
     return (
-        <div>
-            Home page
-            {/* // slider
-            // category
-            // Meal history */}
+        <>
             <div>
-                <img src={leftImage} />
+                <LeftContent />
+                <div className="w-2/3"></div>
             </div>
-        </div>
+            <div>
+                <ListCategory listCategory={listCategory} />
+            </div>
+        </>
     )
 }
