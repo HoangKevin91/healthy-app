@@ -4,7 +4,7 @@ import leftImage from '../../assets/d01.jpg';
 
 export default function LeftContent () {
     return (
-        <div className="w-1/3 relative h-[316px] overflow-hidden">
+        <div className="w-1/3 relative h-[407px] overflow-hidden">
             <div className="absolute inset-0 flex items-center justify-center" 
                 style={{
                     background: "linear-gradient(225deg, #FFCC21 0%, #FF963C 100%)",

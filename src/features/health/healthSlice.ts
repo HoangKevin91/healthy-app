@@ -14,22 +14,22 @@ const initialState: HealthState = {
 }
 
 export const healthSlice = createSlice({
-  name: 'counter',
+  name: 'healthy',
   initialState,
   reducers: {
     increment: (state) => {
-      state.value += 1
+      state.bodyWeight += 1
     },
     decrement: (state) => {
-      state.value -= 1
+      state.bodyWeight -= 1
     },
     incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
+      state.bodyWeight += action.payload
     },
   },
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { increment, decrement, incrementByAmount } = healthSlice.actions
 
 export default healthSlice.reducer
